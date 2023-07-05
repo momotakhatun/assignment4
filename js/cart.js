@@ -39,6 +39,8 @@ const cart = {
             <button data-item-id="${product.id}" class="btn btn-danger remove-btn">Remove</button>
           </div> `);
       });
+    } else {
+      shoppingCart.innerHTML = "";
     }
     const removeBtn = document.querySelectorAll(".remove-btn");
     removeBtn.forEach((item) => {
