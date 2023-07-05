@@ -40,7 +40,7 @@ const cart = {
           </div> `);
       });
     } else {
-      shoppingCart.innerHTML = "";
+      shoppingCart.innerHTML = `<div class="card p-2">No Product</div>`;
     }
     const removeBtn = document.querySelectorAll(".remove-btn");
     removeBtn.forEach((item) => {
